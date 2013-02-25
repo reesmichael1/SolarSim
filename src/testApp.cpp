@@ -29,16 +29,16 @@ void testApp::draw(){
 	x-=0.1;
 
 	//Center Set
-	glTranslatef(ofGetWidth()/2+200*cos(x), ofGetHeight()/2, 200*sin(x));
+	glTranslatef((ofGetWidth()/2+139.57*cos(x)), ofGetHeight()/2, 139.57*(sin(x)));
 	
 	//rotate sphere over time
-	ofRotateY(ofGetFrameNum()*6);
-	ofRotateX(270); //south pole facing up
+	ofRotateY(ofGetFrameNum()*5);
+	ofRotateX(270); //North pole facing up
 
 
 
 	earth.getTextureReference().bind();
-	gluSphere(quadric, 100, 100, 100);
+	gluSphere(quadric, 25, 100, 100);
 	
 	//ofSetColor(255,255,255);
 }
