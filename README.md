@@ -11,3 +11,4 @@ My (eventual) plans for this program are:
 * Integrate the ability to change the speeds with respect to "normal"
 * Draw some moons.
 * Integrate a GoTo function for a specific date/time
+
